@@ -25,6 +25,5 @@ public class GridSetting {
         WebElement gridSettingsExpected = Driver.getDriver().findElement(with(By.xpath("//a[@title='Grid Settings']")).toRightOf(resetButton));
         WebElement gridSettingsActual = Driver.getDriver().findElement(By.xpath("//a[@title='Grid Settings']"));
         Assert.assertEquals(gridSettingsActual, gridSettingsExpected);
-
     }
 }
